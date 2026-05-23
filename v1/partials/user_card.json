@@ -1,0 +1,18 @@
+{
+  "type": "card",
+  "id": "user_card",
+  "style": {
+    "padding": { "topDp": 16, "bottomDp": 16, "startDp": 16, "endDp": 16 }
+  },
+  "child": {
+    "type": "text",
+    "id": "user_name",
+    "text": "Default User",
+    "textColor": { "type": "hex", "value": "#FFFFFF" },
+    "style": {
+      "padding": { "topDp": 10, "bottomDp": 10, "startDp": 16, "endDp": 16 },
+      "shape": { "cornerRadiusDp": 4 },
+      "background": { "color": { "type": "hex", "value": "#3B82F6" } }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "column",
+  "id": "template_demo",
+  "children": [
+    {
+      "type": "text",
+      "id": "lbl_greeting",
+      "text": "Welcome, {{name}}! You have {{messages}} unread messages."
+    },
+    {
+      "type": "spacer",
+      "id": "ts1",
+      "heightDp": 8
+    },
+    {
+      "type": "button",
+      "id": "btn_logout",
+      "label": "Logout {{name}}",
+      "visible": "logged == 'true'",
+      "action": {
+        "type": "emit",
+        "event": "LOGOUT_CLICKED"
+      }
+    },
+    {
+      "type": "button",
+      "id": "btn_login",
+      "label": "Login",
+      "visible": "logged == 'false'",
+      "action": {
+        "type": "emit",
+        "event": "LOGIN_CLICKED"
+      }
+    }
+  ]
+}

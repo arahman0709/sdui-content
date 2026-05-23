@@ -1,0 +1,41 @@
+{
+  "type": "column",
+  "id": "form-demo",
+  "children": [
+    { "type": "text", "id": "heading", "text": "Contact Form" },
+    { "type": "divider", "id": "sep", "thicknessDp": 1.0 },
+    { "type": "spacer", "id": "sp0", "heightDp": 12 },
+    { "type": "text", "id": "name-label", "text": "Full Name *" },
+    {
+      "type": "input",
+      "id": "full-name",
+      "stateKey": "contact.name",
+      "placeholder": "Jane Doe",
+      "inputType": "Text",
+      "validationRules": ["required", "minLength:2"]
+    },
+    { "type": "text", "id": "name-error", "text": "{{contact.name.error}}", "visible": "ne contact.name.error ''" },
+    { "type": "spacer", "id": "sp1", "heightDp": 12 },
+    { "type": "text", "id": "email-label", "text": "Email Address *" },
+    {
+      "type": "input",
+      "id": "contact-email",
+      "stateKey": "contact.email",
+      "placeholder": "jane@example.com",
+      "inputType": "Email",
+      "validationRules": ["required", "email"]
+    },
+    { "type": "text", "id": "email-error", "text": "{{contact.email.error}}", "visible": "ne contact.email.error ''" },
+    { "type": "spacer", "id": "sp2", "heightDp": 12 },
+    { "type": "switch", "id": "subscribe-switch", "stateKey": "contact.subscribe", "label": "Subscribe to newsletter" },
+    { "type": "spacer", "id": "sp3", "heightDp": 16 },
+    {
+      "type": "button",
+      "id": "submit-btn",
+      "label": "Submit",
+      "action": { "type": "submit", "fields": ["contact.name", "contact.email", "contact.subscribe"] }
+    },
+    { "type": "spacer", "id": "sp4", "heightDp": 8 },
+    { "type": "text", "id": "preview", "text": "Name: {{contact.name}} | Email: {{contact.email}}" }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "tokens": {
+    "color": {
+      "$type": "color",
+      "palette": {
+        "blue": {
+          "400": { "$value": "#60A5FA" },
+          "500": { "$value": "#3B82F6" }
+        },
+        "neutral": {
+          "0":   { "$value": "#FFFFFF" },
+          "50":  { "$value": "#FAFAFA" },
+          "100": { "$value": "#F5F5F5" },
+          "900": { "$value": "#0D0D0D" }
+        },
+        "green": {
+          "500": { "$value": "#22C55E" }
+        },
+        "red": {
+          "500": { "$value": "#EF4444" }
+        }
+      }
+    }
+  }
+}

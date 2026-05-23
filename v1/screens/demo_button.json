@@ -1,0 +1,33 @@
+{
+  "type": "column",
+  "id": "button_demo_root",
+  "children": [
+    {
+      "type": "button",
+      "id": "btn_noop",
+      "label": "No Action (no-op)"
+    },
+    {
+      "type": "spacer",
+      "id": "sp1",
+      "heightDp": 8
+    },
+    {
+      "type": "button",
+      "id": "btn_emit",
+      "label": "Emit: catalog_tapped",
+      "action": { "type": "emit", "event": "catalog_tapped" }
+    },
+    {
+      "type": "spacer",
+      "id": "sp2",
+      "heightDp": 8
+    },
+    {
+      "type": "button",
+      "id": "btn_nav",
+      "label": "Navigate (logged)",
+      "action": { "type": "navigate", "route": "screen://catalog/detail" }
+    }
+  ]
+}

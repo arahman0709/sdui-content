@@ -1,0 +1,13 @@
+{
+  "type": "column",
+  "id": "checkbox-demo",
+  "children": [
+    { "type": "text", "id": "heading", "text": "Select your interests:" },
+    { "type": "spacer", "id": "sp0", "heightDp": 8 },
+    { "type": "checkbox", "id": "cb1", "stateKey": "interests.music", "label": "Music" },
+    { "type": "checkbox", "id": "cb2", "stateKey": "interests.sports", "label": "Sports" },
+    { "type": "checkbox", "id": "cb3", "stateKey": "interests.tech", "label": "Technology" },
+    { "type": "spacer", "id": "sp1", "heightDp": 8 },
+    { "type": "text", "id": "status", "text": "Tech selected: {{interests.tech}}" }
+  ]
+}

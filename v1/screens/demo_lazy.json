@@ -1,0 +1,69 @@
+{
+  "type": "column",
+  "id": "lazy_root",
+  "children": [
+    {
+      "type": "text",
+      "id": "lbl_lazy_col",
+      "text": "LazyColumn (scrollable, 20 items):"
+    },
+    {
+      "type": "lazy_column",
+      "id": "lazy_col_demo",
+      "style": { "size": { "heightDp": 200 } },
+      "children": [
+        { "type": "text", "id": "li1",  "text": "• Lazy item 1" },
+        { "type": "text", "id": "li2",  "text": "• Lazy item 2" },
+        { "type": "text", "id": "li3",  "text": "• Lazy item 3" },
+        { "type": "text", "id": "li4",  "text": "• Lazy item 4" },
+        { "type": "text", "id": "li5",  "text": "• Lazy item 5" },
+        { "type": "text", "id": "li6",  "text": "• Lazy item 6" },
+        { "type": "text", "id": "li7",  "text": "• Lazy item 7" },
+        { "type": "text", "id": "li8",  "text": "• Lazy item 8" },
+        { "type": "text", "id": "li9",  "text": "• Lazy item 9" },
+        { "type": "text", "id": "li10", "text": "• Lazy item 10" },
+        { "type": "text", "id": "li11", "text": "• Lazy item 11" },
+        { "type": "text", "id": "li12", "text": "• Lazy item 12" },
+        { "type": "text", "id": "li13", "text": "• Lazy item 13" },
+        { "type": "text", "id": "li14", "text": "• Lazy item 14" },
+        { "type": "text", "id": "li15", "text": "• Lazy item 15" },
+        { "type": "text", "id": "li16", "text": "• Lazy item 16" },
+        { "type": "text", "id": "li17", "text": "• Lazy item 17" },
+        { "type": "text", "id": "li18", "text": "• Lazy item 18" },
+        { "type": "text", "id": "li19", "text": "• Lazy item 19" },
+        { "type": "text", "id": "li20", "text": "• Lazy item 20" }
+      ]
+    },
+    {
+      "type": "spacer",
+      "id": "gap1",
+      "heightDp": 12
+    },
+    {
+      "type": "text",
+      "id": "lbl_lazy_row",
+      "text": "LazyRow (horizontal scroll, 15 items):"
+    },
+    {
+      "type": "lazy_row",
+      "id": "lazy_row_demo",
+      "children": [
+        { "type": "text", "id": "ri1",  "text": "  Item 1  " },
+        { "type": "text", "id": "ri2",  "text": "  Item 2  " },
+        { "type": "text", "id": "ri3",  "text": "  Item 3  " },
+        { "type": "text", "id": "ri4",  "text": "  Item 4  " },
+        { "type": "text", "id": "ri5",  "text": "  Item 5  " },
+        { "type": "text", "id": "ri6",  "text": "  Item 6  " },
+        { "type": "text", "id": "ri7",  "text": "  Item 7  " },
+        { "type": "text", "id": "ri8",  "text": "  Item 8  " },
+        { "type": "text", "id": "ri9",  "text": "  Item 9  " },
+        { "type": "text", "id": "ri10", "text": "  Item 10  " },
+        { "type": "text", "id": "ri11", "text": "  Item 11  " },
+        { "type": "text", "id": "ri12", "text": "  Item 12  " },
+        { "type": "text", "id": "ri13", "text": "  Item 13  " },
+        { "type": "text", "id": "ri14", "text": "  Item 14  " },
+        { "type": "text", "id": "ri15", "text": "  Item 15  " }
+      ]
+    }
+  ]
+}

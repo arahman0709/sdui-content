@@ -1,0 +1,47 @@
+{
+  "type": "column",
+  "id": "visibility_demo",
+  "children": [
+    {
+      "type": "text",
+      "id": "vis_always",
+      "text": "This text is always visible."
+    },
+    {
+      "type": "spacer",
+      "id": "vs1",
+      "heightDp": 8
+    },
+    {
+      "type": "card",
+      "id": "vis_logged_card",
+      "visible": "logged == 'true'",
+      "style": {
+        "padding": { "topDp": 12, "bottomDp": 12, "startDp": 12, "endDp": 12 }
+      },
+      "child": {
+        "type": "text",
+        "id": "vis_logged_text",
+        "text": "👤 Logged-in content. Toggle 'Log out' to hide me."
+      }
+    },
+    {
+      "type": "spacer",
+      "id": "vs2",
+      "heightDp": 8
+    },
+    {
+      "type": "card",
+      "id": "vis_admin_card",
+      "visible": "admin == 'true'",
+      "style": {
+        "padding": { "topDp": 12, "bottomDp": 12, "startDp": 12, "endDp": 12 }
+      },
+      "child": {
+        "type": "text",
+        "id": "vis_admin_text",
+        "text": "🔒 Admin-only content (hidden by default)."
+      }
+    }
+  ]
+}

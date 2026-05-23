@@ -1,0 +1,130 @@
+{
+  "type": "column",
+  "id": "animation-root",
+  "children": [
+    {
+      "type": "text",
+      "id": "section-shimmer",
+      "text": "Shimmer Loading Placeholders",
+      "style": { "padding": { "bottomDp": 8 } }
+    },
+    {
+      "type": "shimmer",
+      "id": "shimmer-wide",
+      "heightDp": 20,
+      "cornerRadiusDp": 4,
+      "style": { "padding": { "bottomDp": 8 } }
+    },
+    {
+      "type": "shimmer",
+      "id": "shimmer-narrow",
+      "widthDp": 160,
+      "heightDp": 20,
+      "cornerRadiusDp": 4,
+      "style": { "padding": { "bottomDp": 8 } }
+    },
+    {
+      "type": "shimmer",
+      "id": "shimmer-tall",
+      "heightDp": 80,
+      "cornerRadiusDp": 8,
+      "style": { "padding": { "bottomDp": 16 } }
+    },
+    {
+      "type": "text",
+      "id": "section-progress",
+      "text": "Progress Indicators",
+      "style": { "padding": { "bottomDp": 8 } }
+    },
+    {
+      "type": "row",
+      "id": "progress-row",
+      "children": [
+        {
+          "type": "progress",
+          "id": "spinner-indeterminate",
+          "progressStyle": "Circular",
+          "style": { "padding": { "endDp": 16 } }
+        },
+        {
+          "type": "progress",
+          "id": "spinner-determinate",
+          "progressStyle": "Circular",
+          "style": { "padding": { "endDp": 16 } }
+        },
+        {
+          "type": "progress",
+          "id": "linear-indeterminate",
+          "progressStyle": "Linear",
+          "style": { "padding": { "startDp": 8 } }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "section-transition",
+      "text": "Enter/Exit Transitions",
+      "style": { "padding": { "topDp": 16, "bottomDp": 8 } }
+    },
+    {
+      "type": "card",
+      "id": "fade-card",
+      "visible": "show_fade_card == 'true'",
+      "action": { "type": "emit", "event": "HIDE_FADE_CARD" },
+      "child": {
+        "type": "text",
+        "id": "fade-text",
+        "text": "FadeIn / FadeOut — 400ms\nTap to dismiss",
+        "style": { "padding": { "startDp": 12, "endDp": 12, "topDp": 8, "bottomDp": 8 } }
+      },
+      "transition": {
+        "enter": "FadeIn",
+        "exit": "FadeOut",
+        "durationMs": 400
+      },
+      "style": { "padding": { "bottomDp": 8 } }
+    },
+    {
+      "type": "card",
+      "id": "slide-card",
+      "visible": "show_slide_card == 'true'",
+      "action": { "type": "emit", "event": "HIDE_SLIDE_CARD" },
+      "child": {
+        "type": "text",
+        "id": "slide-text",
+        "text": "SlideInBottom / SlideOutBottom — 350ms\nTap to dismiss",
+        "style": { "padding": { "startDp": 12, "endDp": 12, "topDp": 8, "bottomDp": 8 } }
+      },
+      "transition": {
+        "enter": "SlideInBottom",
+        "exit": "SlideOutBottom",
+        "durationMs": 350
+      },
+      "style": { "padding": { "bottomDp": 8 } }
+    },
+    {
+      "type": "card",
+      "id": "scale-card",
+      "visible": "show_scale_card == 'true'",
+      "action": { "type": "emit", "event": "HIDE_SCALE_CARD" },
+      "child": {
+        "type": "text",
+        "id": "scale-text",
+        "text": "ScaleIn / ScaleOut — 300ms\nTap to dismiss",
+        "style": { "padding": { "startDp": 12, "endDp": 12, "topDp": 8, "bottomDp": 8 } }
+      },
+      "transition": {
+        "enter": "ScaleIn",
+        "exit": "ScaleOut",
+        "durationMs": 300
+      },
+      "style": { "padding": { "bottomDp": 8 } }
+    },
+    {
+      "type": "button",
+      "id": "show-all-anim-cards-btn",
+      "label": "Show all cards (replay enter animations)",
+      "action": { "type": "emit", "event": "SHOW_ALL_ANIM_CARDS" }
+    }
+  ]
+}

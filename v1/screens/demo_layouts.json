@@ -1,0 +1,82 @@
+{
+  "type": "column",
+  "id": "layouts_root",
+  "children": [
+    {
+      "type": "text",
+      "id": "lbl_row",
+      "text": "Row (A  B  C):"
+    },
+    {
+      "type": "row",
+      "id": "row_demo",
+      "children": [
+        { "type": "text", "id": "a", "text": "A" },
+        { "type": "spacer", "id": "s1", "widthDp": 16 },
+        { "type": "text", "id": "b", "text": "B" },
+        { "type": "spacer", "id": "s2", "widthDp": 16 },
+        { "type": "text", "id": "c", "text": "C" }
+      ]
+    },
+    {
+      "type": "spacer",
+      "id": "gap1",
+      "heightDp": 12
+    },
+    {
+      "type": "text",
+      "id": "lbl_card",
+      "text": "Card:"
+    },
+    {
+      "type": "card",
+      "id": "card_demo",
+      "child": { "type": "text", "id": "card_body", "text": "I am inside a Card widget." }
+    },
+    {
+      "type": "spacer",
+      "id": "gap2",
+      "heightDp": 12
+    },
+    {
+      "type": "text",
+      "id": "lbl_box",
+      "text": "Box (stacked layers):"
+    },
+    {
+      "type": "box",
+      "id": "box_demo",
+      "children": [
+        {
+          "type": "spacer",
+          "id": "box_bg",
+          "widthDp": 280,
+          "heightDp": 80,
+          "style": {
+            "background": { "color": { "type": "hex", "value": "#3B82F6" } }
+          }
+        },
+        {
+          "type": "column",
+          "id": "box_front_wrapper",
+          "style": {
+            "padding": { "topDp": 16, "bottomDp": 0, "startDp": 16, "endDp": 0 }
+          },
+          "children": [
+            {
+              "type": "text",
+              "id": "box_front",
+              "text": "Front overlay",
+              "textColor": { "type": "hex", "value": "#FFFFFF" },
+              "style": {
+                "background": { "color": { "type": "hex", "value": "#1D4ED8" } },
+                "padding": { "topDp": 6, "bottomDp": 6, "startDp": 12, "endDp": 12 },
+                "shape": { "cornerRadiusDp": 4 }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

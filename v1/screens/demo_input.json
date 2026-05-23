@@ -1,0 +1,16 @@
+{
+  "type": "column",
+  "id": "input-demo",
+  "children": [
+    { "type": "text", "id": "label1", "text": "Name:" },
+    { "type": "input", "id": "name-input", "stateKey": "form.name", "placeholder": "Enter your name", "inputType": "Text" },
+    { "type": "spacer", "id": "sp1", "heightDp": 12 },
+    { "type": "text", "id": "label2", "text": "Email:" },
+    { "type": "input", "id": "email-input", "stateKey": "form.email", "placeholder": "Enter email address", "inputType": "Email" },
+    { "type": "spacer", "id": "sp2", "heightDp": 12 },
+    { "type": "text", "id": "label3", "text": "Password:" },
+    { "type": "input", "id": "pass-input", "stateKey": "form.password", "placeholder": "Enter password", "inputType": "Password" },
+    { "type": "spacer", "id": "sp3", "heightDp": 16 },
+    { "type": "text", "id": "greeting", "text": "Hello, {{form.name}}!" }
+  ]
+}

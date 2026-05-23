@@ -1,0 +1,14 @@
+{
+  "type": "column",
+  "id": "divider-demo",
+  "children": [
+    { "type": "text", "id": "t1", "text": "Above the divider" },
+    { "type": "divider", "id": "div1", "thicknessDp": 2.0, "color": { "type": "hex", "value": "#CCCCCC" } },
+    { "type": "text", "id": "t2", "text": "Below the divider" },
+    { "type": "spacer", "id": "sp1", "heightDp": 16 },
+    { "type": "text", "id": "t3", "text": "Thick accent divider:" },
+    { "type": "divider", "id": "div2", "thicknessDp": 4.0, "color": { "type": "hex", "value": "#2196F3" } },
+    { "type": "text", "id": "t4", "text": "Default divider (theme color):" },
+    { "type": "divider", "id": "div3" }
+  ]
+}

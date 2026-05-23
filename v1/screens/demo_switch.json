@@ -1,0 +1,11 @@
+{
+  "type": "column",
+  "id": "switch-demo",
+  "children": [
+    { "type": "switch", "id": "notif-switch", "stateKey": "prefs.notifications", "label": "Enable notifications" },
+    { "type": "spacer", "id": "sp1", "heightDp": 8 },
+    { "type": "switch", "id": "dark-switch", "stateKey": "prefs.darkMode", "label": "Dark mode" },
+    { "type": "spacer", "id": "sp2", "heightDp": 8 },
+    { "type": "text", "id": "info", "text": "Notifications on: {{prefs.notifications}}" }
+  ]
+}

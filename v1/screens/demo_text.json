@@ -1,0 +1,49 @@
+{
+  "type": "column",
+  "id": "text_demo_root",
+  "children": [
+    {
+      "type": "text",
+      "id": "plain_text",
+      "text": "Plain text: Hello, SDUI!"
+    },
+    {
+      "type": "spacer",
+      "id": "sp1",
+      "heightDp": 8
+    },
+    {
+      "type": "text",
+      "id": "rich_text",
+      "text": {
+        "spans": [
+          { "text": "Rich text: " },
+          { "text": "bold", "typographyKey": "bold" },
+          { "text": ", " },
+          { "text": "italic", "typographyKey": "italic" },
+          { "text": " and " },
+          { "text": "bold+italic", "typographyKey": "bold_italic" }
+        ]
+      }
+    },
+    {
+      "type": "spacer",
+      "id": "sp2",
+      "heightDp": 8
+    },
+    {
+      "type": "text",
+      "id": "linked_text",
+      "text": {
+        "spans": [
+          { "text": "Tappable span: " },
+          {
+            "text": "tap me",
+            "typographyKey": "bold",
+            "link": { "type": "emit", "event": "span_tapped" }
+          }
+        ]
+      }
+    }
+  ]
+}

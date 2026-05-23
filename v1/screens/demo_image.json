@@ -1,0 +1,6 @@
+{
+  "type": "image",
+  "id": "img_demo",
+  "url": "https://picsum.photos/seed/sdui/600/200",
+  "contentDescription": "Sample image loaded via Coil"
+}
